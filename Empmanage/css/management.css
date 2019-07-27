@@ -1,0 +1,219 @@
+
+section{
+	
+	width: 1145px;
+	/* height:160px; */
+	/* border: 1px solid black; */
+	margin: 0 auto;
+}
+
+
+
+.header{
+	margin-top: 25px;
+	
+}
+
+.header>h1{
+	font-size: 36px;
+	/* margin-bottom: 10px; */
+}
+
+.header>div:nth-child(2){
+	height: 40px;
+	background:#347AB6;
+	border-radius: 5px 5px 0 0;
+	font-size: 16px;
+	color: white;
+	line-height: 40px;	
+	padding-left: 10px;
+	
+}
+
+
+/* 搜索框和添加表单区块 */
+
+.header>div:nth-child(3){
+	height: 66px;
+	border: 1px solid black;
+	border-radius: 0 0 5px 5px;
+	
+	
+	padding: 0 20px;
+	
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+/* 所有的input */
+
+
+ 
+
+.header>div:nth-child(3) input{
+	width: 200px;
+	height: 30px;
+	border-radius:5px;
+	border: 1px solid #D2D2D2;
+}
+
+
+/* 给数据内容设置相关样式 */
+.data{
+	
+/* 	border: 1px solid black; */
+	
+	margin-top: 20px;
+	
+
+}
+
+.dataTable,.dataTable td,.dataTable th{
+	border: 1px solid #D2D2D2;
+}
+
+.dataTable th{
+	text-align: left;
+	padding: 0 10px;
+}
+
+.data>table{
+	width: 100%;
+	table-layout: fixed;
+}
+
+.dataTable tr{
+	height: 40px;
+}
+
+.dataTable tbody tr:nth-child(odd){
+	background: #f9f9f9;
+}
+
+.dataTable td{
+	padding: 0 10px;
+}
+
+.dataTable button{
+	width:36px;
+	height: 24px;
+	border-radius:5px;
+	color: white;
+}
+
+
+.dataTable button:nth-child(odd){
+	background:#ebac4a;
+	border: 1px solid #d3a154;
+}
+
+.dataTable button:nth-child(even){
+	background: #d75350;
+	border: 1px solid #c36d66;
+}
+
+
+/* 表达那区块 */
+
+.add{
+		width: 870px;
+		height: 66px;
+		float: left;
+		line-height: 66px;
+		
+}
+
+.add>button{
+	height: 36px;
+	width: 55px;
+	background: #3479B7;
+	color: white;
+	border:1px solid #D2D2D2 ;
+	border-radius: 5px;
+}
+
+.search{
+	width: 200px;
+	height: 66px;
+	float: right;
+	margin-top: 20px;
+	
+}
+
+/* 鼠标样式 */
+
+button{
+	cursor: pointer;
+}
+
+
+/* 定义遮罩层 */
+
+.mask{
+	width:100%;
+	height: 100%;
+	position: fixed;
+	
+	left: 0;
+	top: 0;
+	
+	
+	
+	background: #ccc;
+	opacity: 0.5;
+	z-index: 100;
+	
+	display: none;
+	
+	
+}
+
+
+
+.updataPanle{
+	width: 300px;
+	height: 300px;
+	background: white;
+	position: fixed;
+	
+	z-index: 101;
+	
+	display: none;
+	
+	padding: 30px 20px;
+	
+	box-sizing: border-box;
+}
+
+
+.updataPanle img{
+	width: 15px;
+	height: 15px;
+	
+}
+
+.updataPanle span{
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+
+/* 给表格修改样式 */
+.updataPanle table{
+	width: 300px;
+}
+
+.updataPanle table tr{
+	height: 36px;
+}
+
+.updataPanle h3{
+	font-size:24px ;
+	user-select: none;
+}
+
+

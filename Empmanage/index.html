@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/management.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+		<script type="text/javascript" src="js/empmanage.js">
+		
+		</script>
+		
+		<script type="text/javascript"src="js/data.js">
+			
+		</script>
+
+	</head>
+	<body>
+
+		<section class="header">
+			<!-- 大标题 -->
+			<h1>员工管理系统</h1>
+
+
+			<div>
+				添加用户
+
+
+			</div>
+
+
+
+			<div>
+				<!-- 添加用户的表单 -->
+				<div class="add">
+
+					用户id&nbsp;<input type="text" name="userId" id="userId" placeholder="用户id">
+					姓名&nbsp;<input type="text" name="realName" id="realName" placeholder="用户名">
+					薪资&nbsp;<input type="text" name="Salary" id="Salary" placeholder="4000">
+					<button type="submit" id="addBtn">添加</button>
+				</div>
+
+				<!-- 搜索数据的表单 -->
+				<div class="search">
+					<input type="search" name="" id="search" placeholder="搜索">
+				</div>
+
+			</div>
+
+
+		</section>
+
+
+		<section class="data">
+			<table class="dataTable" id="dataTable">
+
+				<thread>
+					<tr>
+						<td>ID</td>
+						<td>姓名</td>
+						<td>薪资</td>
+						<td>创建时间</td>
+						<td>操作</td>
+					</tr>
+				</thread>
+
+
+				<tbody id="tbody1">
+					
+				</tbody>
+
+
+
+
+
+			</table>
+
+
+		</section>
+		
+		<!-- 遮罩层 -->
+		<div  class="mask" id="mask">
+			
+			
+		</div>
+		
+		<!-- 修改框层 -->
+		
+		<div class="updataPanle" id="updataPanle">
+			<span id="closeSpan"><img src="img/Male.gif" ></span>
+			<h3>修改界面</h3>
+			<table>
+				<tbody>
+					<tr>
+						<td>员工编号:</td>
+						<td><input type="text" name="updateId" id="updateId" value=""readonly="readonly" /></td>
+					</tr>
+					<tr>
+						<td>员工姓名:</td>
+						<td><input type="text" name="" id="updateName" value="" /></td>
+					</tr>
+					<tr>
+						<td>员工薪资:<
+						/td>
+						<td><input type="number" name="" id="updataSalary" value="" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><button id="updateBtn">确认修改</button></td>
+					</tr>
+				</tbody>
+				
+				
+			</table>
+			
+		</div>
+		
+	</body>
+</html>
